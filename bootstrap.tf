@@ -13,4 +13,5 @@ module "bootstrap_cicd_aws_codebuild"{
 	aws_region = "us-west-2"
 	state_file_iam_policy_arn = module.bootstrap.state_file_iam_policy_arn
 	codebuild_terraform_version = "1.9.7"
+	override_terraform_source_dir = "./"
 }
